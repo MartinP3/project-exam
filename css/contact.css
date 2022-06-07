@@ -1,0 +1,21 @@
+/* Contact form CSS */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.additional-info {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.additional-info li {
+    margin-bottom: 5px;
+}
+
+  #loader {
+      position: relative;
+  }

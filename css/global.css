@@ -1,0 +1,284 @@
+/* Global CSS */
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    font-family: var(--bodyFont);
+    display: block;
+    background-color: var(--bodyColor);
+}
+
+:root {
+    --bodyFont: 'Roboto', sans-serif;
+    --headerFont: 'Poppins', sans-serif;
+    --playfairFont: 'Playfair Display', 'Times new';
+
+    --bodyColor: #efefef;
+    --lightYellowColor: #FFE5A3;
+    --brownYellowColor: #956a00;
+    --yellowColor: #ffd66f;
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --buttonColor: rgb(69, 69, 69);
+    --socialsColor: rgb(150, 150, 150);
+    --socialsHoverColor: rgb(68, 68, 68);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 448px;
+    width: 100%;
+    background: var(--yellowColor);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blackColor);
+}
+
+ul {
+    list-style: none;
+}
+
+button:hover,
+.button input:hover {
+    cursor: pointer;
+}
+
+h1, h2, h3, .title {
+    font-family: var(--headerFont);
+}
+
+.active {
+    color: var(--brownYellowColor);
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+#loader {
+    left: 50%;
+    top: 40%;
+    width: 66px;
+    height: 66px;
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid var(--yellowColor);
+    border-right: 16px solid var(--blackColor);
+    border-bottom: 16px solid var(--yellowColor);
+    border-left: 16px solid var(--blackColor);
+    animation: spin 2s linear infinite;
+    margin: 3rem 0;
+  }
+
+  #myDiv {
+    display: none;
+  }
+
+  @keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+/* ########################## */
+
+/* Form */
+.container .title {
+    font-size: 2rem;
+    position: relative;
+}
+
+.container form .details {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+form h3 {
+    padding-bottom: 10px;
+}
+
+form .button input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--buttonColor);
+    color: var(--whiteColor);
+    border: solid 1px var(--buttonColor);
+    min-width: 200px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+form .button input:hover{
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(182, 182, 182);
+    color: var(--blackColor);
+}
+
+form .user-details input, textarea {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+    margin-bottom: 15px;
+    border: solid 1px grey;
+    border-bottom-width: 2px;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    min-height: 150px;
+    max-height: 150px;
+    font-size: 1.2rem;
+}
+
+.form-error {
+    display: none;
+    color: rgb(126, 0, 0);
+    margin-top: -8px;
+    margin-bottom: 7px;
+  }
+  
+  .form-success {
+    display: none;
+    color: green;
+    margin-top: -8px;
+    margin-bottom: 7px;
+  }
+/* ########################## */
+
+/* Header */
+header {
+ text-align: center;
+ padding-top: 1rem;
+}
+.headerLogo {
+    max-height: 96px;
+    max-width: 96px;
+}
+
+.headerTitle, 
+.headerQuote {
+ font-size: 1.8em;
+}
+
+.headerQuote {
+    font-family: var(--playfairFont);
+    font-size: 2.0rem;
+}
+nav {
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--brownYellowColor);
+}
+/* ########################## */
+
+/* Footer */
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+.footer-upper {
+    background-color: var(--lightYellowColor);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.footer-copyright {
+    background-color: var(--yellowColor);
+    padding: 1rem;
+}
+
+.footer-links div,
+.footer-social-media div {
+    font-size: 1.5rem;
+}
+
+.footer-links div {
+    margin-bottom: 0.5rem;;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social-media a {
+    font-size: 2rem;
+    color: var(--socialsColor);
+    transition: color 0.2s;
+}
+
+.footer-social-media a:hover {
+    color: var(--socialsHoverColor);
+}
+/* ########################## */
+
+/* WCAG helping classes */
+.visually-hidden {
+      clip: rect(1px, 1px, 1px, 1px);
+      clip-path: inset(50%);
+      height: 1px;
+      width: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+    }
+/* ########################## */
+
+/*  Header Footer media queries */
+@media (max-width: 500px) {
+    .footer-upper {
+        flex-direction: column;
+        gap: 0;
+    }
+    header a,
+    header .active {
+        font-size: 1rem;
+    }
+    header .headerQuote {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header a,
+     header .active {
+         font-size: 0.8rem;
+     }
+}
+/* ########################## */
