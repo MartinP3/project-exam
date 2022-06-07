@@ -1,4 +1,4 @@
-# project-exam
+# Project exam
 
 ![thunderous-zabaione-bb5979 netlify app_index html](https://user-images.githubusercontent.com/70173574/172454220-8959ea64-d58c-46a0-970d-fbda13460fb7.png)
 
