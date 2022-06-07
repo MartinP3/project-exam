@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Another odd dish conjured up by the one and only Martin P of Martin's Kitchen!">
+    <script src="https://kit.fontawesome.com/0ef9526f11.js" crossorigin="anonymous"></script>
+    <link href="./css/global.css" rel="stylesheet" />
+    <link href="./css/blogpage.css" rel="stylesheet" />
+    <!-- Hotjar Tracking Code for https://thunderous-zabaione-bb5979.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:2992431,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <title>Martin's Kitchen | If you see this something probably went very wrong</title>
+</head>
+<body onload="loadPage()">
+    <header>
+        <div>
+            <a href="index.html"><img class="headerLogo" src="./assets/logo.png" alt="chef's hat logo"></a>
+            <div class="headerTitle">Martin's Kitchen</div>
+            <div class="headerQuote">A bit of everything to make</div>
+        </div>
+        <nav>
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blogs.html" class="active">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>  
+        </nav>
+    </header>
+    <main>
+        <div id="loader"></div>
+        <div style="display:none;" id="myDiv"></div>
+        <div class="blogs-page"></div>
+    </main>
+    <footer>
+        <div class="footer-upper">
+            <div class="footer-social-media">
+                <div>Follow Us</div>
+                <a href="https://twitter.com" target="_blank">
+                    <ion-icon name="logo-twitter"><p class="visually-hidden">twitter link</p></ion-icon>
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <ion-icon name="logo-facebook"><p class="visually-hidden">facebook link</p></ion-icon>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <ion-icon name="logo-instagram"><p class="visually-hidden">instagram link</p></ion-icon>
+                </a>
+            </div>
+            <div class="footer-links">
+                <div>Links</div>
+                <a href="index.html">Home</a> | 
+                <a href="blogs.html">Recipes</a> | 
+                <a href="about.html">About</a> | 
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-copyright">&copy; 2022 Martin Pedersen</div>
+    </footer>
+    <script src="./js/loader.js"></script>
+    <script src="./js/blogpage.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
