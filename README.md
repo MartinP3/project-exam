@@ -12,6 +12,9 @@ This is the first exam I had with Noroff, and the task was to make a blog, with 
 For my own blog I decided on food recipes as my blog theme since... food is good! And it's using wordpress as a headless CMS to host the recipes so I can add them as needed there and they will automatically appear on the site as I add more.
 The goal of the site is to give people nice and simple recipes to follow for a good meal and letting people see new things to try out that they might not have considered before or a simple way to make a dessert.
 
+The design choice for my project exam was yellow, a color I hope encourages the visitor to try out the recipes.
+I decided on having everything shown in "cards" for a nice sticky note like look a bit reminiscent of a shopping list to myself.
+
 ## Built With
 
 - HTML
