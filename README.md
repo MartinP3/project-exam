@@ -9,15 +9,17 @@ A simple overview of the use/purpose of the project.
 
 This is the first exam I had with Noroff, and the task was to make a blog, with a type/theme of my choice.
 
-For my own blog I decided on food recipes as my blog theme since... food is good! And using wordpress as a headless CMS to host the recipes so I can add them as needed there and they will automatically appear on the site as I add more.
+For my own blog I decided on food recipes as my blog theme since... food is good! And it's using wordpress as a headless CMS to host the recipes so I can add them as needed there and they will automatically appear on the site as I add more.
 The goal of the site is to give people nice and simple recipes to follow for a good meal and letting people see new things to try out that they might not have considered before or a simple way to make a dessert.
-
 
 ## Built With
 
 - HTML
 - CSS
 - Javascript
+- Wordpress REST API
+- Visual Studio Code
+- Netlify
 
 ## Getting Started
 
